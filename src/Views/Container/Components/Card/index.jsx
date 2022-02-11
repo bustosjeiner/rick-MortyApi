@@ -10,16 +10,19 @@ function Card (props) {
     image,
   } = props;
 
+
+
   return (
-    <div>
+    <div className = {`${style.card} ${gender === 'Male' ? style.cardMale : style.cardFemale}`}>
       <img 
         src = {image}
         alt = {name}
+        className = {style.imgCharacter}
       />
-      <h2>{name}</h2>
-      <p>{status}</p>
-      <p>{species}</p>
-      <p>{gender}</p>
+      <h2 className = {style.characterName}>{name}</h2>
+      <p className = {`${style.status} ${status === 'Alive' ? style.statusAlive : status === 'Dead' ? style.statusDead : style.statusUnknow}`}>{status}</p>
+      <p className = {style.characteristics}>{species}</p>
+      <p className = {style.characteristics}>{gender}</p>
     </div>
   );
 }

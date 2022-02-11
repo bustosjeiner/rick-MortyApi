@@ -1,0 +1,12 @@
+.containerSearchBar {
+  width: 90%;
+  max-width: 500px;
+  margin: 25px 0 15px;
+}
+
+.searchBar {
+  width: 100%;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  padding: 5px 10px;
+}

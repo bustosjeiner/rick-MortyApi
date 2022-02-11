@@ -13,12 +13,13 @@ function SearchBar(props) {
   }
 
   return (
-    <div>
+    <div className = {style.containerSearchBar}>
       <input 
         type = 'text' 
         placeholder= "Type a name"
         value = {text}
         onChange = {search}
+        className = {style.searchBar}
       />
     </div>
   );

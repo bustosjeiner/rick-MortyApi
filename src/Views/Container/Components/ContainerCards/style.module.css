@@ -1,0 +1,13 @@
+.mainSection {
+  width: 100%;
+  background-color: black;
+}
+.containerCards {
+  max-width: 1500px;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+}

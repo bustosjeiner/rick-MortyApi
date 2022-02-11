@@ -1,0 +1,58 @@
+.card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.cardMale {
+  background-color: rgb(156, 255, 156);
+}
+
+.cardFemale {
+  background-color: rgb(255, 179, 217);
+}
+
+.imgCharacter {
+  width: 200px;
+  border: 3px solid rgba(2,0,212,1);
+  border-radius: 25px;
+}
+
+.status {
+  position: absolute;
+  right: 30px;
+  margin: 10px;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.statusAlive {
+  background-color: green;
+}
+
+.statusDead {
+  background-color: rgb(99, 0, 20);
+}
+
+.statusUnknow {
+  background-color: rgb(255, 196, 0);
+  color: black;
+}
+
+.characterName {
+  margin: 10px 0 5px;
+  font-size: 2.5rem;
+  color: rgba(2,0,212,1);
+  text-align: center;
+}
+
+.characteristics {
+  font-size: 2rem;
+  font-weight: bold;
+}

@@ -4,8 +4,10 @@ import style from './style.module.css'
 function ContainerCards(props) {
   const {children} = props;
   return (
-    <main>
-      {children}
+    <main className = {style.mainSection}>
+      <div className = {style.containerCards}>
+        {children}
+      </div>
     </main>
   );
 }

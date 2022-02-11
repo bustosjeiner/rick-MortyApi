@@ -5,8 +5,8 @@ function Logo() {
   return (
     <a href = {"/"}>
       <img
-        className = {style.img} 
-        src = {'https://help.redbubble.com/hc/article_attachments/360002309526/Rick_and_Morty_-_logo__English_.png'} 
+        className = {style.logo} 
+        src = {'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/2560px-Rick_and_Morty.svg.png'} 
         alt = {'Logo Rick and Morty'} />
     </a>
   );

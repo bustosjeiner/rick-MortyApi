@@ -5,7 +5,7 @@ function Pagination(props) {
   const {children} = props;
   
   return (
-    <div>
+    <div className = {style.containerButtons}>
       {children}
     </div>
   );

@@ -7,7 +7,11 @@ function PagButton(props) {
     value,
   } = props;
   return (
-    <button type = 'button' onClick = {onClick}>
+    <button 
+      type = 'button' 
+      onClick = {onClick}
+      className = {style.button}
+    >
       {value}
     </button>
   );

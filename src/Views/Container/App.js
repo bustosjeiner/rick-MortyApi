@@ -54,6 +54,18 @@ function App() {
           setText = {setText}
         />
       </Header>
+      <ContainerCards>
+        {searchCharacters?.map(character => (
+          <Card 
+            key = {character.id}
+            name = {character.name}
+            status = {character.status}
+            species = {character.species}
+            gender = {character.gender}
+            image = {character.image}
+          />
+        ),)}
+      </ContainerCards>
       <Pagination>
         {pages.prev && 
           <PagButton 
@@ -68,18 +80,6 @@ function App() {
           />
         }
       </Pagination>
-      <ContainerCards>
-        {searchCharacters?.map(character => (
-          <Card 
-            key = {character.id}
-            name = {character.name}
-            status = {character.status}
-            species = {character.species}
-            gender = {character.gender}
-            image = {character.image}
-          />
-        ),)}
-      </ContainerCards>
     </React.Fragment>
   );
 }
